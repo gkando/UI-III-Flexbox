@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -64,3 +59,126 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+/*   display: inline-block; */
+/*   width: 900px; */
+}
+
+/*  start nav bar stuff */
+ul.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-menu li {
+  float: left;
+}
+
+.nav-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-menu li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/*  End nav bar stuff */
+
+.services-header-img{
+  position: relative; 
+  left: 10px;
+  display: block;
+  width: 100%;
+}
+
+h1{
+  font-size: 150%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.content > p:first-of-type {
+  margin: 10px;
+  padding: 5px;
+  
+}
+
+.content {
+  width: 85%;
+/*   border: dashed green; */
+  margin: 10px;
+  padding: 5px;
+  position: relative; 
+  left: 10px;
+}
+
+.container {
+/*   width: 800px; */
+/*   margin: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+/*   border: solid cyan; */
+/*   justify-content: space-evenly;   */
+    justify-content: center;  
+}
+
+.item{
+  width: 45%;
+  height: 220px;
+  margin-right: 18px;
+  margin-bottom: 14px;
+  padding: 6px;
+  border: solid black .5px;
+  background-color: #EDEDED;
+
+}
+
+.item :not(button){
+  display: flex;
+  align-items: space-evenly;
+  padding: 6px;
+  line-height: 16px;
+}
+
+.item p{
+  margin-bottom: 8px;
+}
+
+.button {
+  background-color: white;
+  border: solid black 1px;
+  color: black;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2px;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 8px;
+  position: relative; 
+}
+
+break{
+  flex-basis: 100%;
+  width: 0px; 
+  height: 0px; 
+  overflow: hidden;
+}
+
+hr { 
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-style: inset;
+  border-width: .5px;
+  border-color: black;
+}
